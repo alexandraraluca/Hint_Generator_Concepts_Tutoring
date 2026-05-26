@@ -1,0 +1,180 @@
+{
+  "problem_id": "2021_tema1_crypto",
+  "results": [
+    {
+      "file": "anon_1541_40.java",
+      "score": 40.0,
+      "is_passing": false,
+      "error": null,
+      "schema_errors": [],
+      "segments": {
+        "intent": {
+          "text": "Să determine numărul maxim de monede pe oră pe care rețeaua Gigel le poate mina după ce cumpără procesoare pentru calculatoarele sale.",
+          "matches_problem": true,
+          "confidence": "high"
+        },
+        "function": {
+          "algorithm": "greedy",
+          "data_structures": [
+            "ArrayList",
+            "sort"
+          ],
+          "complexity": "unknown",
+          "confidence": "medium"
+        },
+        "implementation": {
+          "key_operations": [
+            "incrementăm toate calculatoarele cu putere minimă",
+            "calculăm costul total al upgrade-urilor pentru grupul minim",
+            "comutăm bugetul în funcție de costul calculat"
+          ],
+          "potential_issues": [
+            "nu verifică dacă bugetul este suficient înainte de a face upgrade-urile, ceea ce poate duce la depășirea bugetului",
+            "nu utilizează bugetul rămas pentru a face upgrade-uri parțiale",
+            "outputul este decrementat cu 1 fără explicație",
+            "nu tratează cazul în care bugetul este exact egal cu costul grupului minim"
+          ],
+          "confidence": "high"
+        }
+      },
+      "raw": "{\n  \"intent\": {\n    \"text\": \"Să determine numărul maxim de monede pe oră pe care rețeaua Gigel le poate mina după ce cumpără procesoare pentru calculatoarele sale.\",\n    \"matches_problem\": true,\n    \"confidence\": \"high\"\n  },\n  \"function\": {\n    \"algorithm\": \"greedy\",\n    \"data_structures\": [\"ArrayList\", \"sort\"],\n    \"complexity\": \"unknown\",\n    \"confidence\": \"medium\"\n  },\n  \"implementation\": {\n    \"key_operations\": [\n      \"incrementăm toate calculatoarele cu putere minimă\",\n      \"calculăm costul total al upgrade-urilor pentru grupul minim\",\n      \"comutăm bugetul în funcție de costul calculat\"\n    ],\n    \"potential_issues\": [\n      \"nu verifică dacă bugetul este suficient înainte de a face upgrade-urile, ceea ce poate duce la depășirea bugetului\",\n      \"nu utilizează bugetul rămas pentru a face upgrade-uri parțiale\",\n      \"outputul este decrementat cu 1 fără explicație\",\n      \"nu tratează cazul în care bugetul este exact egal cu costul grupului minim\"\n    ],\n    \"confidence\": \"high\"\n  }\n}"
+    },
+    {
+      "file": "anon_1516_100.cpp",
+      "score": 100.0,
+      "is_passing": false,
+      "error": null,
+      "schema_errors": [],
+      "segments": {
+        "intent": {
+          "text": "Codul încearcă să determine numărul maxim de monede pe oră pe care rețeaua poate să le mine după ce cumpără procesoare.",
+          "matches_problem": true,
+          "confidence": "high"
+        },
+        "function": {
+          "algorithm": "greedy",
+          "data_structures": [
+            "priority_queue"
+          ],
+          "complexity": "O(N log N)",
+          "confidence": "medium"
+        },
+        "implementation": {
+          "key_operations": [
+            "extragerea celor mai puternice calculatoare din coadă",
+            "calcularea costului pentru a ridica puterea calculatorului mai slab",
+            "actualizarea bugetului și inserarea calculatorului cu putere egală"
+          ],
+          "potential_issues": [
+            "folosește comparator invers, rezultând că ia cele mai puternice în loc de cele mai slabe",
+            "nu tratează corect cazurile când toate puterile sunt egale",
+            "posibilă diviziune între zero dacă totalul prețului este zero"
+          ],
+          "confidence": "medium"
+        }
+      },
+      "raw": "{\n  \"intent\": {\n    \"text\": \"Codul încearcă să determine numărul maxim de monede pe oră pe care rețeaua poate să le mine după ce cumpără procesoare.\",\n    \"matches_problem\": true,\n    \"confidence\": \"high\"\n  },\n  \"function\": {\n    \"algorithm\": \"greedy\",\n    \"data_structures\": [\"priority_queue\"],\n    \"complexity\": \"O(N log N)\",\n    \"confidence\": \"medium\"\n  },\n  \"implementation\": {\n    \"key_operations\": [\n      \"extragerea celor mai puternice calculatoare din coadă\",\n      \"calcularea costului pentru a ridica puterea calculatorului mai slab\",\n      \"actualizarea bugetului și inserarea calculatorului cu putere egală\"\n    ],\n    \"potential_issues\": [\n      \"folosește comparator invers, rezultând că ia cele mai puternice în loc de cele mai slabe\",\n      \"nu tratează corect cazurile când toate puterile sunt egale\",\n      \"posibilă diviziune între zero dacă totalul prețului este zero\"\n    ],\n    \"confidence\": \"medium\"\n  }\n}"
+    },
+    {
+      "file": "anon_346_100.java",
+      "score": 100.0,
+      "is_passing": false,
+      "error": null,
+      "schema_errors": [],
+      "segments": {
+        "intent": {
+          "text": "Să determine numărul maxim de monede pe oră pe care rețeaua poate să le mineze după ce se cumpără procesoare.",
+          "matches_problem": true,
+          "confidence": "high"
+        },
+        "function": {
+          "algorithm": "greedy",
+          "data_structures": [
+            "ArrayList",
+            "Collections.sort"
+          ],
+          "complexity": "O(N log N + B)",
+          "confidence": "high"
+        },
+        "implementation": {
+          "key_operations": [
+            "sortarea calculatorilor după putere inițială (coinsPerHour)",
+            "determinarea valorii minime coinsPerHour curente",
+            "buclă care în fiecare iterație încarcă un calculator cu costul de upgrade dacă există bani disponibili",
+            "actualizarea sumei de bani și a coinsPerHour pentru calculatorul selectat",
+            "scrierea rezultatului în fișierul de ieșire"
+          ],
+          "potential_issues": [
+            "bucla for se întrerupe după primul calculator care nu are coinsPerHour egal cu min, astfel încât doar un calculator este actualizat în fiecare iterație",
+            "lista nu este reordonată după actualizarea coinsPerHour, deci mincoinsperh poate fi incorect calculat în iterațiile următoare",
+            "nu se verifică dacă toate calculatorii cu coinsPerHour egal cu min pot fi actualizați simultan, ceea ce poate duce la un rezultat suboptimal",
+            "costul de upgrade este tratat ca constant, dar nu se ține cont de faptul că poate fi diferit pentru fiecare calculator",
+            "nu se verifică dacă există suficienți bani pentru a actualiza toate calculatorii cu coinsPerHour egal cu min, deci bucla poate opri prea devreme"
+          ],
+          "confidence": "medium"
+        }
+      },
+      "raw": "{\n  \"intent\": {\n    \"text\": \"Să determine numărul maxim de monede pe oră pe care rețeaua poate să le mineze după ce se cumpără procesoare.\",\n    \"matches_problem\": true,\n    \"confidence\": \"high\"\n  },\n  \"function\": {\n    \"algorithm\": \"greedy\",\n    \"data_structures\": [\"ArrayList\", \"Collections.sort\"],\n    \"complexity\": \"O(N log N + B)\",\n    \"confidence\": \"high\"\n  },\n  \"implementation\": {\n    \"key_operations\": [\n      \"sortarea calculatorilor după putere inițială (coinsPerHour)\",\n      \"determinarea valorii minime coinsPerHour curente\",\n      \"buclă care în fiecare iterație încarcă un calculator cu costul de upgrade dacă există bani disponibili\",\n      \"actualizarea sumei de bani și a coinsPerHour pentru calculatorul selectat\",\n      \"scrierea rezultatului în fișierul de ieșire\"\n    ],\n    \"potential_issues\": [\n      \"bucla for se întrerupe după primul calculator care nu are coinsPerHour egal cu min, astfel încât doar un calculator este actualizat în fiecare iterație\",\n      \"lista nu este reordonată după actualizarea coinsPerHour, deci mincoinsperh poate fi incorect calculat în iterațiile următoare\",\n      \"nu se verifică dacă toate calculatorii cu coinsPerHour egal cu min pot fi actualizați simultan, ceea ce poate duce la un rezultat suboptimal\",\n      \"costul de upgrade este tratat ca constant, dar nu se ține cont de faptul că poate fi diferit pentru fiecare calculator\",\n      \"nu se verifică dacă există suficienți bani pentru a actualiza toate calculatorii cu coinsPerHour egal cu min, deci bucla poate opri prea devreme\"\n    ],\n    \"confidence\": \"medium\"\n  }\n}"
+    },
+    {
+      "file": "anon_346_100.cpp",
+      "score": 100.0,
+      "is_passing": true,
+      "error": null,
+      "schema_errors": [],
+      "segments": {
+        "intent": {
+          "text": "Codul încearcă să determine numărul maxim de monede pe oră pe care rețeaua poate să le mineze după achiziționarea de procesoare suplimentare.",
+          "matches_problem": true,
+          "confidence": "high"
+        },
+        "function": {
+          "algorithm": "binary_search",
+          "data_structures": [
+            "vector"
+          ],
+          "complexity": "O(n log M)",
+          "confidence": "high"
+        },
+        "implementation": {
+          "key_operations": [
+            "citirea valorilor Pi și Ui pentru fiecare calculator",
+            "calcularea costului necesar pentru a atinge un anumit număr de monede pe oră (mid) pentru fiecare calculator",
+            "utilizarea unei căutări binare pentru a găsi cea mai mare valoare de monede pe oră posibilă",
+            "actualizarea intervalului de căutare în funcție de costul total calculat"
+          ],
+          "potential_issues": [
+            "posibilitatea de overflow a operațiunilor de înmulțire (mid - Pi) * Ui din cauza valorilor mari ale dr",
+            "intervalul de căutare inițial (dr = 10^13) poate fi mult mai mare decât valoarea maximă posibilă, ducând la iterații inutile"
+          ],
+          "confidence": "medium"
+        }
+      },
+      "raw": "{\n  \"intent\": {\n    \"text\": \"Codul încearcă să determine numărul maxim de monede pe oră pe care rețeaua poate să le mineze după achiziționarea de procesoare suplimentare.\",\n    \"matches_problem\": true,\n    \"confidence\": \"high\"\n  },\n  \"function\": {\n    \"algorithm\": \"binary_search\",\n    \"data_structures\": [\"vector\"],\n    \"complexity\": \"O(n log M)\",\n    \"confidence\": \"high\"\n  },\n  \"implementation\": {\n    \"key_operations\": [\n      \"citirea valorilor Pi și Ui pentru fiecare calculator\",\n      \"calcularea costului necesar pentru a atinge un anumit număr de monede pe oră (mid) pentru fiecare calculator\",\n      \"utilizarea unei căutări binare pentru a găsi cea mai mare valoare de monede pe oră posibilă\",\n      \"actualizarea intervalului de căutare în funcție de costul total calculat\"\n    ],\n    \"potential_issues\": [\n      \"posibilitatea de overflow a operațiunilor de înmulțire (mid - Pi) * Ui din cauza valorilor mari ale dr\",\n      \"intervalul de căutare inițial (dr = 10^13) poate fi mult mai mare decât valoarea maximă posibilă, ducând la iterații inutile\"\n    ],\n    \"confidence\": \"medium\"\n  }\n}"
+    }
+  ],
+  "analysis": {
+    "total_files": 4,
+    "schema_pass_rate": 1.0,
+    "schema_failures": [],
+    "algorithms_found": [
+      "greedy",
+      "greedy",
+      "greedy",
+      "binary_search"
+    ],
+    "unique_algorithms": [
+      "greedy",
+      "binary_search"
+    ],
+    "algorithm_consistent": true,
+    "avg_intent_similarity": 0.872,
+    "confidence_distribution": {
+      "high": 7,
+      "medium": 5,
+      "low": 0
+    },
+    "mismatched_intent_files": [],
+    "verdict": "READY — segment extractor is consistent enough to use"
+  }
+}

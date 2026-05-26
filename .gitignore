@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (raw archives + extracted; we ship only schemas + small artifacts)
+data/raw/
+data/processed/large_*
+data/hints/silver_full.jsonl
+*.pkl
+*.parquet
+
+# Models / training artifacts
+models/
+checkpoints/
+runs/
+wandb/
+mlruns/
+*.bin
+*.safetensors
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Environment
+.env
+.env.local
+
+# Keep these
+!data/figures/*.png
+!data/figures/*.svg
+!data/annotations/*.json
+!data/processed/canonical.jsonl.gz
+!app/**/*.safetensors
+
+statements.zip
+solutions.zip
+tests.zip
+submission_feedback.jsonl
+app/mistral7b_instruct_pa_hints/
+app/adapter_specific_hints/mistral7b_instruct_pa_hints/
+notebooks/
+README.md
+docs/

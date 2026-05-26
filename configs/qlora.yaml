@@ -1,0 +1,67 @@
+# QLoRA fine-tuning config for gpt-oss-20b (PA hint generator)
+#
+# Usage:
+#   python -m src.stage4_finetune.train_qlora --config configs/qlora.yaml
+#
+# Hardware notes:
+#   - 4-bit quantization keeps weights in ~10 GB; with seq_len=2048 + grad
+#     checkpointing the whole job fits in a 16 GB GPU (T4, V100). Pe consumer
+#     RTX 3090 (24 GB) merge confortabil cu seq_len=4096.
+#   - On CPU only `--dry-run` is feasible (checks data pipeline, exits).
+
+model:
+  base_model: openai/gpt-oss-20b
+  # auto | gpt_oss_mxfp4 | bnb_4bit | bf16 — auto infers from base_model + use_4bit
+  load_kind: auto
+  # gpt-oss-20b is shipped pre-quantized in MXFP4. We do NOT add BnB on top
+  # (causes `merge_quantization_configs` errors). For non-MXFP4 base models
+  # set use_4bit: true to enable BnB NF4.
+  use_4bit: false
+  # Harmony / gpt-oss only; stripped automatically for other chat templates.
+  reasoning_effort: low
+  bnb_4bit_quant_type: nf4
+  bnb_4bit_compute_dtype: bfloat16
+  attn_implementation: eager   # MoE+flash_attn este experimental; eager e mai stabil
+
+data:
+  train_path: data/hints/finetune_train.jsonl
+  val_path: data/hints/finetune_val.jsonl
+  max_seq_length: 2048
+  pack_sequences: false        # mai prietenos cu hinturi scurte si grad clip-uri
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  bias: none
+  # Target_modules valid pentru gpt-oss (MoE attention + experts):
+  # - attention proiecții: q_proj, k_proj, v_proj, o_proj
+  # - experts MLP:        w1, w2, w3 (router-ul îl lăsăm înghețat)
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+
+train:
+  output_dir: models/gpt_oss_20b_pa_hints
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 16     # eff. batch ~16
+  num_train_epochs: 3
+  learning_rate: 0.0002
+  lr_scheduler_type: cosine
+  warmup_ratio: 0.03
+  weight_decay: 0.01
+  # adamw_torch = fără bitsandbytes. Cu BnB CUDA: paged_adamw_8bit (mai puțină VRAM la optim).
+  optim: adamw_torch
+  max_grad_norm: 1.0
+  bf16: true
+  logging_steps: 5
+  save_steps: 50
+  save_total_limit: 3
+  eval_steps: 50
+  eval_strategy: steps
+  gradient_checkpointing: true
+  dataloader_num_workers: 0           # Windows-friendly
+  seed: 23
+  report_to: none                     # Pune "wandb" daca ai cont

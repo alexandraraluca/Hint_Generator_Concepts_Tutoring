@@ -1,0 +1,37 @@
+SEGMENT CONSISTENCY REPORT — 2021_tema1_crypto
+============================================================
+Files checked:        4
+Schema pass rate:     100%
+Algorithm consistent: True
+Algorithms found:     ['greedy', 'greedy', 'greedy', 'binary_search']
+Avg intent similarity:0.872
+Confidence dist:      {'high': 7, 'medium': 5, 'low': 0}
+Intent mismatches:    none
+
+VERDICT: READY — segment extractor is consistent enough to use
+
+Per-file segments:
+
+  anon_1541_40.java (score=40.0)
+    intent:   Să determine numărul maxim de monede pe oră pe care rețeaua Gigel le poate mina  [high]
+    function: greedy / ['ArrayList', 'sort'] [medium]
+    impl:     ['incrementăm toate calculatoarele cu putere minimă', 'calculăm costul total al upgrade-urilor pentru grupul minim', 'comutăm bugetul în funcție de costul calculat'] [high]
+    issues:   ['nu verifică dacă bugetul este suficient înainte de a face upgrade-urile, ceea ce poate duce la depășirea bugetului', 'nu utilizează bugetul rămas pentru a face upgrade-uri parțiale', 'outputul este decrementat cu 1 fără explicație', 'nu tratează cazul în care bugetul este exact egal cu costul grupului minim']
+
+  anon_1516_100.cpp (score=100.0)
+    intent:   Codul încearcă să determine numărul maxim de monede pe oră pe care rețeaua poate [high]
+    function: greedy / ['priority_queue'] [medium]
+    impl:     ['extragerea celor mai puternice calculatoare din coadă', 'calcularea costului pentru a ridica puterea calculatorului mai slab', 'actualizarea bugetului și inserarea calculatorului cu putere egală'] [medium]
+    issues:   ['folosește comparator invers, rezultând că ia cele mai puternice în loc de cele mai slabe', 'nu tratează corect cazurile când toate puterile sunt egale', 'posibilă diviziune între zero dacă totalul prețului este zero']
+
+  anon_346_100.java (score=100.0)
+    intent:   Să determine numărul maxim de monede pe oră pe care rețeaua poate să le mineze d [high]
+    function: greedy / ['ArrayList', 'Collections.sort'] [high]
+    impl:     ['sortarea calculatorilor după putere inițială (coinsPerHour)', 'determinarea valorii minime coinsPerHour curente', 'buclă care în fiecare iterație încarcă un calculator cu costul de upgrade dacă există bani disponibili', 'actualizarea sumei de bani și a coinsPerHour pentru calculatorul selectat', 'scrierea rezultatului în fișierul de ieșire'] [medium]
+    issues:   ['bucla for se întrerupe după primul calculator care nu are coinsPerHour egal cu min, astfel încât doar un calculator este actualizat în fiecare iterație', 'lista nu este reordonată după actualizarea coinsPerHour, deci mincoinsperh poate fi incorect calculat în iterațiile următoare', 'nu se verifică dacă toate calculatorii cu coinsPerHour egal cu min pot fi actualizați simultan, ceea ce poate duce la un rezultat suboptimal', 'costul de upgrade este tratat ca constant, dar nu se ține cont de faptul că poate fi diferit pentru fiecare calculator', 'nu se verifică dacă există suficienți bani pentru a actualiza toate calculatorii cu coinsPerHour egal cu min, deci bucla poate opri prea devreme']
+
+  anon_346_100.cpp (score=100.0)
+    intent:   Codul încearcă să determine numărul maxim de monede pe oră pe care rețeaua poate [high]
+    function: binary_search / ['vector'] [high]
+    impl:     ['citirea valorilor Pi și Ui pentru fiecare calculator', 'calcularea costului necesar pentru a atinge un anumit număr de monede pe oră (mid) pentru fiecare calculator', 'utilizarea unei căutări binare pentru a găsi cea mai mare valoare de monede pe oră posibilă', 'actualizarea intervalului de căutare în funcție de costul total calculat'] [medium]
+    issues:   ['posibilitatea de overflow a operațiunilor de înmulțire (mid - Pi) * Ui din cauza valorilor mari ale dr', 'intervalul de căutare inițial (dr = 10^13) poate fi mult mai mare decât valoarea maximă posibilă, ducând la iterații inutile']

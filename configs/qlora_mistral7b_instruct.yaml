@@ -1,0 +1,61 @@
+# LoRA fine-tuning — Mistral 7B Instruct (bf16, fără bitsandbytes obligatoriu).
+
+# Pentru QLoRA (NF4): `use_4bit: true`, `optim: paged_adamw_8bit` și BnB CUDA ok.
+#
+# mistralai/Mistral-7B-Instruct-v0.3. Ministral-8B: mistralai/Ministral-8B-Instruct-2410.
+#
+# Usage:
+#   python -m src.stage4_finetune.train_qlora --config configs/qlora_mistral7b_instruct.yaml --dry-run
+#   python -m src.stage4_finetune.train_qlora --config configs/qlora_mistral7b_instruct.yaml
+
+model:
+  base_model: mistralai/Mistral-7B-Instruct-v0.3
+  load_kind: auto
+  use_4bit: false
+  # Doar modelele Harmony (ex. gpt-oss) acceptă acest câmp; pentru Mistral e filtrat automat.
+  reasoning_effort: low
+  bnb_4bit_quant_type: nf4
+  bnb_4bit_compute_dtype: bfloat16
+  attn_implementation: sdpa
+
+data:
+  # train_path: data/hints/finetune_train.jsonl
+  # val_path: data/hints/finetune_val.jsonl
+  train_path: data/hints/specific2_finetune_train.jsonl
+  val_path: data/hints/specific2_finetune_val.jsonl
+  max_seq_length: 4096
+  pack_sequences: false
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  bias: none
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+
+train:
+  output_dir: models/mistral7b_instruct_pa_hints
+  per_device_train_batch_size: 2
+  gradient_accumulation_steps: 8
+  num_train_epochs: 3
+  learning_rate: 0.0002
+  lr_scheduler_type: cosine
+  warmup_ratio: 0.03
+  weight_decay: 0.01
+  optim: adamw_torch
+  max_grad_norm: 1.0
+  # bf16: true
+  bf16: false
+  logging_steps: 5
+  save_steps: 50
+  save_total_limit: 3
+  eval_steps: 50
+  eval_strategy: steps
+  gradient_checkpointing: true
+  dataloader_num_workers: 2
+  seed: 23
+  report_to: none

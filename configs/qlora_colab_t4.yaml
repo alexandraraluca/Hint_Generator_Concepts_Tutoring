@@ -1,0 +1,54 @@
+# Colab T4-safe config for Stage 4 QLoRA training
+# Use this when GPU RAM is around 15-16 GB.
+
+model:
+  base_model: openai/gpt-oss-20b
+  load_kind: auto
+  # gpt-oss-20b vine pre-quantizat în MXFP4 (~10 GB pe disc).
+  # Nu mai aplicăm BnB peste el - lăsăm transformers să folosească
+  # quantizerul original. `use_4bit` e ignorat când base_model conține "gpt-oss".
+  use_4bit: false
+  reasoning_effort: low
+  bnb_4bit_quant_type: nf4
+  bnb_4bit_compute_dtype: bfloat16
+  attn_implementation: eager
+
+data:
+  train_path: data/hints/finetune_train.jsonl
+  val_path: data/hints/finetune_val.jsonl
+  max_seq_length: 1024
+  pack_sequences: false
+
+lora:
+  r: 8
+  alpha: 16
+  dropout: 0.05
+  bias: none
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+
+train:
+  output_dir: models/gpt_oss_20b_pa_hints
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 8
+  num_train_epochs: 3
+  learning_rate: 0.0002
+  lr_scheduler_type: cosine
+  warmup_ratio: 0.03
+  weight_decay: 0.01
+  # adamw_torch evită bitsandbytes; pe T4 16GB dacă face OOM la optim, încearcă paged_adamw_8bit cu BnB CUDA.
+  optim: adamw_torch
+  max_grad_norm: 1.0
+  bf16: true
+  logging_steps: 5
+  save_steps: 50
+  save_total_limit: 3
+  eval_steps: 50
+  eval_strategy: steps
+  gradient_checkpointing: true
+  dataloader_num_workers: 0
+  seed: 23
+  report_to: none

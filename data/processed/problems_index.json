@@ -1,0 +1,470 @@
+[
+  {
+    "problem_id": "2021_tema1_crypto",
+    "year": "2021",
+    "tema": "tema1",
+    "pid": "crypto",
+    "n_solutions": 446,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 1631,
+    "statement_chunk_excerpt": "crypto.out Explicat,ie\n5 16\n1 3\n4 2\n3 3\n1 2\n2 1\n3 Init,ial ret,eaua produce o moned˘ a pe or˘ a.\nGigel va face:\n2 upgrade-uri pentru primul calculator, cu pret ,ul 6,\n2 upgrade-uri pentru calculatorul 4, cu pret,ul 4\nsi un upgrade pentru calculatorul 5, cu pret,ul 1.\nAstfel, ret,eaua va putea mina 3 criptomonede pe or˘ a.\nPret,ul pl˘ atit este11, care se încadreaz˘ a în buget.\n\nproblema 2: gigel investeste la bursă 5\n2 problema 2: gigel investeste la bursă\n2.1 Enunt,\nPentru c˘ a în ultima perioada Gigel a stat doar acasa, a reus , it s˘ a economiseasc˘ a\nsuma de B dolari, pe care acum dores , "
+  },
+  {
+    "problem_id": "2021_tema1_ridge",
+    "year": "2021",
+    "tema": "tema1",
+    "pid": "ridge",
+    "n_solutions": 298,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 395,
+    "statement_chunk_excerpt": "ridge.out se va aﬂa un num˘ ar, reprezentând costul minim cu care\nGigel poate obt,ine creasta mult dorita.\n4.4 Restrict,ii s, i precizări\n• 1 ⩽ N ⩽ 106.\n• 1 ⩽ Hi, Ci ⩽ 109.\n\nproblema 4: gigel si creasta montana 10\n4.5 T estare s, i punctare\n• Punctajul maxim este de 30 puncte.\n• Timpul de execut,ie:\n– C/C++: 1.5 s\n– Java: 4 s\n• Sursa care cont,ine funct,ia main trebuie obligatoriu denumit˘ a:"
+  },
+  {
+    "problem_id": "2021_tema1_stocks",
+    "year": "2021",
+    "tema": "tema1",
+    "pid": "stocks",
+    "n_solutions": 377,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 1490,
+    "statement_chunk_excerpt": "stocks.out Explicat,ie\n5 30 6\n9 7 17\n12 5 16\n7 6 8\n3 2 6\n5 2 6\n12 Buget = 30, maxLoss = 6\nGigel va alege act,iunile 1 3 si 4.\nVa investi 9 + 7 + 3 = 19 dolari < Buget\nÎn cel mai rau caz,\nactiunile vor valora 7 + 6 + 2 = 15 dolari.\n19 - 15 = 4. Mai mic decat maxLoss\nIn cel mai bun caz,\nactiunile vor valora 17 + 8 + 6 = 31 de dolari.\n31 - 19 = 12 dolari proﬁt.\n\nproblema 3: gigel merge la munte 7\n3 problema 3: gigel merge la munte\n3.1 Enunt,\nCu banii câs , tigat,i din afaceri, Gigel s , i-a cump˘ arat excavator. Succesul l-a\ndeterminat s˘ a mute munt,ii (la propriu), as, a c˘ a s-a apucat de exca"
+  },
+  {
+    "problem_id": "2021_tema1_trigigel",
+    "year": "2021",
+    "tema": "tema1",
+    "pid": "trigigel",
+    "n_solutions": 155,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 2151,
+    "statement_chunk_excerpt": "Trigigel 11\n5.1 Enunt, . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11\n5.2 Date de intrare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11\n5.3 Date de ies, ire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11\n5.4 Restrict,ii s, i preciz˘ ari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11\n5.5 Testare s, i punctare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11\n5.6 Exemple . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12\n5.6.1 Exemplu 1 . . . . . . . . . . ."
+  },
+  {
+    "problem_id": "2021_tema1_valley",
+    "year": "2021",
+    "tema": "tema1",
+    "pid": "valley",
+    "n_solutions": 392,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 1180,
+    "statement_chunk_excerpt": "valley .out Explicat,ie\n4\n3 3 3 3\n0 S, irul este deja vale.\n\nproblema 4: gigel si creasta montana 9\n4 problema 4: gigel si creasta montana\n4.1 Enunt,\nDes, i at,i facut o treab˘ a foarte bun˘ a cu prima cerint, ˘ a a lui Gigel legat˘ a de munte,\nacesta s-a r˘ azgândit.\nNu mai vrea s˘ a fac˘ a o vale, ci vrea diversitate. Îs, i ia excavatorul s, i se apuc˘ a din\nnou de s˘ apat. La fel ca s , i prima dat˘ a, zona montan˘ a este reprezentat de un s, ir de\nnumere naturale, ﬁecare numar reprezentând în˘ alt,imea muntelui i.\nAcum el vrea s˘ a sape munt ,ii astfel încât s˘ a nu existe doi munt ,i adia"
+  },
+  {
+    "problem_id": "2021_tema2_adrese",
+    "year": "2021",
+    "tema": "tema2",
+    "pid": "adrese",
+    "n_solutions": 276,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 909,
+    "statement_chunk_excerpt": "adrese.out Explicat,ie\n5\nDavid 3\ndavidiancu@yahoo.com\ndavidiancudvd@gmail.com\nfunkydvd@gmail.com\nMihai 2\nmihainan@yahoo.com\nmihai.nan.cti@gmail.com\nTraian 3\ntraianiancu@yahoo.com\ntraiantrn@gmail.com\nfunkydvd@gmail.com\nMihai 2\nmihait@yahoo.com\nmihai24@gmail.com\nMihai 2\nmihai2345@yahoo.com\nmihainan@yahoo.com\n3\nMihai 2\nmihai24@gmail.com\nmihait@yahoo.com\nMihai 3\nmihai.nan.cti@gmail.com\nmihai2345@yahoo.com\nmihainan@yahoo.com\nDavid 5\ndavidiancu@yahoo.com\ndavidiancudvd@gmail.com\nfunkydvd@gmail.com\ntraianiancu@yahoo.com\ntraiantrn@gmail.com\nDavid s, i Traian sunt aceeas , i\npersoan˘ a (au în comun e-\nm"
+  },
+  {
+    "problem_id": "2021_tema2_lego",
+    "year": "2021",
+    "tema": "tema2",
+    "pid": "lego",
+    "n_solutions": 207,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 2822,
+    "statement_chunk_excerpt": "lego.out Explicat,ie\n5 3 3 15\n1 4 5\n1 = 1\n2 = 1 + 1\n3 = 1 + 1 + 1\n4 = 4\n5 = 5\n6 = 1 + 5\n7 = 1 + 1 + 5\n8 = 4 + 4\n9 = 4 + 5\n10 = 5 + 5\n11 = 5 + 5 + 1\n12 = 4 + 4 + 4\n13 = 4 + 4 + 5\n14 = 4 + 5 + 5\n15 = 5 + 5 + 5\n12\n\n4\nBonus – 25 de puncte\n4.1 Enunt ,\nGigel s-a angajat la o ﬁrm˘ a de ret,elistic˘ a. Aici descoper˘ a o ret,ea intern˘ a format˘ a din\nN calculatoare conectate între ele prin M leg˘ aturi bidirect,ionale. Fiecare calculator\napart,ine unui angajat din ﬁrm˘ a. Din moment ce pandemia nu le mai permite angajat,ilor\nacestei ﬁrme s˘ a se întâlneasc˘ a zilnic la locul de munc˘ a pentru a socia"
+  },
+  {
+    "problem_id": "2021_tema2_poduri",
+    "year": "2021",
+    "tema": "tema2",
+    "pid": "poduri",
+    "n_solutions": 346,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 1436,
+    "statement_chunk_excerpt": "poduri.out Explicat,ie\n10 8\n3 7\n..VOVDDD\nD.DDO.DD\nDDVDDDDD\nDDDDVVDD\nVD.DOOD.\nVV.VVODD\nVOOOVO..\nOVOODDOO\n.DDD...D\nVV.VD.OD\n2\nPe pozit,ia (3, 7) se aﬂ˘ a un pod dublu s, i Gigel se poate deplasa pe\norizontal˘ a, ajungând în pozit,ia (3, 8). Pe pozit ,ia (3, 8) se aﬂ˘ a tot\nun pod dublu s, i Gigel se poate deplasa pe orizontal˘ a s, i ajunge pe\nuscat.\n6\n\n2\nProblema 2 – 45 de punct\n2.1 Enunt ,\nGigel a fost angajat la Google s , i dores, te s˘ a determine câte persoane distincte folosesc\nsistemul de pos, t˘ a electronic˘ a. El are acces la o list˘ a cu posibile persoane s, i pentru ﬁecare\npersoan˘ "
+  },
+  {
+    "problem_id": "2021_tema2_retea",
+    "year": "2021",
+    "tema": "tema2",
+    "pid": "retea",
+    "n_solutions": 86,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 2361,
+    "statement_chunk_excerpt": "retea.out Explicat,ie\n5 7\n1 2\n1 3\n1 4\n1 5\n2 3\n3 4\n3 5\n8\n8\n8\n8\n8\nOrice nod am elimina, apelurile care o s˘ a dispar˘ a\nsunt cele init,iate de el (4) s, i cele init,iate de c˘ atre cele-\nlalte noduri c˘ atre el (4).\nÎn total, o s˘ a dispar˘ a 4+ 4 = 8 pentru ﬁecare nod.\n1 2\n54\n3\n17\n\n5\nPunctare\n• Punctajul temei este de 125 de puncte, distribuit astfel:\n• Problema 1: 25 de puncte\n• Problema 2: 45 de puncte\n• Problema 3: 45 de puncte\n• 5 puncte vor ﬁ acordate pentru comentarii s, i README\n• 5 puncte vor ﬁ acordate pentru coding style in mod automat de catre checker.\n• Se pot realiza depunctari de "
+  },
+  {
+    "problem_id": "2022_tema1_crypto",
+    "year": "2022",
+    "tema": "tema1",
+    "pid": "crypto",
+    "n_solutions": 145,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 431,
+    "statement_chunk_excerpt": "crypto.out se va aﬂa un num˘ ar, reprezentând num˘ arul de aparit,ii ale\nsubs, irului S în cheile K.\n4.4 Restrict,ii s, i precizări\n• 1 ⩽ N ⩽ 105, lungimea cheii K\n• 1 ⩽ L ⩽ 10, lungimea subs, irului S\n\nproblema 4: gigel si cheia de la portofel 10\n4.5 T estare s, i punctare\n• Punctajul maxim este de 35 puncte.\n• Timpul de execut,ie:\n– C/C++: 1.5 s\n– Java: 2.5 s\n• Sursa care cont,ine funct,ia main trebuie obligatoriu denumit˘ a:"
+  },
+  {
+    "problem_id": "2022_tema1_prinel",
+    "year": "2022",
+    "tema": "tema1",
+    "pid": "prinel",
+    "n_solutions": 282,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 1583,
+    "statement_chunk_excerpt": "prinel.out Explicat,ie\n4 4\n1 7 5 2\n2 6 5 2\n9 Pentru target[0] nicio operat,ie.\nPentru target[1] 4 operat,ii : 1 → 2 → 4 → 6 → 7\nPentru target[2] 3 operat,ii: 1 → 2 → 4 → 5\nPentru target[3] o operat,ie: 1 → 2\nAlegem target[0], target[2] s, i target[3], obt,inând 2 + 5 + 2 = 9\n\nproblema 4: gigel si cheia de la portofel 9\n4 problema 4: gigel si cheia de la portofel\n4.1 Enunt,\nDup˘ a ani de minat criptomonede, Gigel s-a decis c˘ a în sfârs , it e timpul s˘ a le\nfoloseasc˘ a. Când a vrut s˘ a acceseze portofelul, a realizat c˘ a are nevoie de o cheie K\nformat˘ a din litere mici ale alfabetului engl"
+  },
+  {
+    "problem_id": "2022_tema1_regele",
+    "year": "2022",
+    "tema": "tema1",
+    "pid": "regele",
+    "n_solutions": 45,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 1874,
+    "statement_chunk_excerpt": "regele >\n./check.sh cs\n\npunctare 14\n• Punctajul pe teste este cel de pe vmchecker s , i se acord˘ a rulând tema doar cu\ntestele private.\n• Checkerul veriﬁc˘ a doar existent ,a unui README cu denumire corect˘ a s , i\ncont,inut nenul. Punctajul ﬁnal pe README s , i comentarii se acord˘ a la corectarea\nmanual˘ a a temei.\n• La corectarea manual˘ a se poate depuncta pentru erori de coding style care nu\nsunt semnalate de checker.\n• Corectorii îs, i rezerv˘ a dreptul de a sc˘ adea puncte pentru orice problem˘ a g˘ asit˘ a\nîn implementare, dac˘ a vor considera acest lucru necesar.\n• Pentru citirea in "
+  },
+  {
+    "problem_id": "2022_tema1_statistics",
+    "year": "2022",
+    "tema": "tema1",
+    "pid": "statistics",
+    "n_solutions": 298,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 404,
+    "statement_chunk_excerpt": "statistics.out se va aﬂa pe prima linie num˘ arul maxim de cuvinte din\nlist˘ a, având o liter˘ a dominant˘ a.\n2.4 Restrict,ii s, i precizări\n• 1 ⩽ N ⩽ 105\n• 1 ⩽ L ⩽ 105, unde L este suma lungimilor cuvintelor din list˘ a\n2.5 T estare s, i punctare\n• Punctajul maxim este de 25 puncte.\n• Timpul de execut,ie:\n– C/C++: 0.5 s\n– Java: 1.5 s\n• Sursa care cont,ine funct,ia main trebuie obligatoriu denumit˘ a:"
+  },
+  {
+    "problem_id": "2022_tema1_walsh",
+    "year": "2022",
+    "tema": "tema1",
+    "pid": "walsh",
+    "n_solutions": 306,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 1417,
+    "statement_chunk_excerpt": "Walsh 3\n1.1 Enunt, . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n1.2 Date de intrare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n1.3 Date de ies, ire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n1.4 Restrict,ii s, i preciz˘ ari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4\n1.5 Testare s, i punctare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4\n1.6 Exemple . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4\n1.6.1 Exemplul 1 . . . . . . . . . . . . . . . "
+  },
+  {
+    "problem_id": "2022_tema2_beamdrone",
+    "year": "2022",
+    "tema": "tema2",
+    "pid": "beamdrone",
+    "n_solutions": 255,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 565,
+    "statement_chunk_excerpt": "Beamdrone 10\n3.1 Enunt, . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10\n3.2 Date de intrare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10\n3.3 Date de ies, ire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10\n3.4 Restrict,ii s, i preciz˘ ari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10\n3.5 Testare s, i punctare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11\n3.6 Exemple . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11\n4"
+  },
+  {
+    "problem_id": "2022_tema2_curatare",
+    "year": "2022",
+    "tema": "tema2",
+    "pid": "curatare",
+    "n_solutions": 145,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 4727,
+    "statement_chunk_excerpt": "curatare.out Explicat,ie\n10 10\n..........\n..S.....S.\nX........X\nXX......XX\nX......XXX\n.......XXX\n........RX\nRXXXXX...X\n.....XR..X\n....SXXXXX\n11\nCei 2 robot,ei din dreapta trec în acelas , i timp prin spat ,iul de\ndeschidere al camerei lor.\nObservat,i c˘ a robot,elul cel mai din stânga nu merge c˘ atre cel\nmai apropiat spat ,iu murdar, ﬁindc˘ a lucreaz˘ a cooperativ cu\nceilalt,i robot,ei.\nDurata ﬁnal˘ a e determinat˘ a de traseul robot,elului din mijloc.\n\nfortificat , ii 6\n2 fortificat , ii\n2.1 Enunt,\nÎn imperiul lui Caesar circul˘ a zvonul c˘ a populat,iile barbare se preg˘ atesc s˘ a atace.\nÎ"
+  },
+  {
+    "problem_id": "2022_tema2_curse",
+    "year": "2022",
+    "tema": "tema2",
+    "pid": "curse",
+    "n_solutions": 224,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 1819,
+    "statement_chunk_excerpt": "curse >\n./check.sh cs\n\npunctare 16\n• Punctajul pe teste este cel de pe vmchecker s , i se acord˘ a rulând tema doar cu\ntestele private.\n• Checkerul veriﬁc˘ a doar existent ,a unui README cu denumire corect˘ a s , i\ncont,inut nenul. Punctajul ﬁnal pe README s , i comentarii se acord˘ a la corectarea\nmanual˘ a a temei.\n• La corectarea manual˘ a se poate depuncta pentru erori de coding style care nu\nsunt semnalate de checker.\n• Corectorii îs, i rezerv˘ a dreptul de a sc˘ adea puncte pentru orice problem˘ a g˘ asit˘ a\nîn implementare, dac˘ a vor considera acest lucru necesar.\n• Pentru citirea in J"
+  },
+  {
+    "problem_id": "2022_tema2_fortificatii",
+    "year": "2022",
+    "tema": "tema2",
+    "pid": "fortificatii",
+    "n_solutions": 192,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 0,
+    "statement_chunk_excerpt": ""
+  },
+  {
+    "problem_id": "2023_tema1_badgpt",
+    "year": "2023",
+    "tema": "tema1",
+    "pid": "badgpt",
+    "n_solutions": 217,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 2527,
+    "statement_chunk_excerpt": "badgpt >\n./check.sh cs\n\nfolosire chatgpt 15\n• Punctajul pe teste este cel de pe vmchecker s , i se acord˘ a rulând tema doar cu\ntestele private.\n• Checkerul veriﬁc˘ a doar existent ,a unui README cu denumire corect˘ a s , i\ncont,inut nenul. Punctajul ﬁnal pe README s , i comentarii se acord˘ a la corectarea\nmanual˘ a a temei.\n• La corectarea manual˘ a se poate depuncta pentru erori de coding style care nu\nsunt semnalate de checker.\n• Corectorii îs, i rezerv˘ a dreptul de a sc˘ adea puncte pentru orice problem˘ a g˘ asit˘ a\nîn implementare, dac˘ a vor considera acest lucru necesar.\n• Pentru cit"
+  },
+  {
+    "problem_id": "2023_tema1_feribot",
+    "year": "2023",
+    "tema": "tema1",
+    "pid": "feribot",
+    "n_solutions": 371,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 568,
+    "statement_chunk_excerpt": "Feribot 3\n1.1 Enunt, . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n1.2 Date de intrare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n1.3 Date de ies, ire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n1.4 Restrict,ii s, i preciz˘ ari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n1.5 Testare s, i punctare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n1.6 Exemple . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4\n2 Problema 2:"
+  },
+  {
+    "problem_id": "2023_tema1_nostory",
+    "year": "2023",
+    "tema": "tema1",
+    "pid": "nostory",
+    "n_solutions": 356,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 671,
+    "statement_chunk_excerpt": "nostory\n2.1 Enunt,\nSe dau 2 ∗ N numere distincte, împ˘ art,ite în dou˘ a liste de lungime N: A s, i B.\nAvem voie s˘ a facem mut˘ ari de tipul: alegem dou˘ a numere din cele dou˘ a liste, s, i le\ninterschimb˘ am. Putem alege ambele numere din aceeas, i list˘ a.\nDup˘ a ce facem mut˘ arile, calcul˘ am un scor astfel: pentru ﬁecare pereche de\nnumere care se g˘ asesc pe aceeas, i pozit,ie în A s, i B, p˘ astr˘ am maximul dintre ele; suma\nmaximelor este scorul. Ne dorim s˘ amaximiz˘ amacest scor.\nAceast˘ a problem˘ a are dou˘ a subpuncte:\n1. putem face un num˘ ar nelimitat de mut˘ ari.\n2. putem face"
+  },
+  {
+    "problem_id": "2023_tema1_semnale",
+    "year": "2023",
+    "tema": "tema1",
+    "pid": "semnale",
+    "n_solutions": 306,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 583,
+    "statement_chunk_excerpt": "Semnale 10\n4.1 Enunt, . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10\n4.2 Date de intrare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10\n4.3 Date de ies, ire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10\n4.4 Restrict,ii s, i preciz˘ ari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10\n4.5 Testare s, i punctare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10\n4.6 Exemple . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11\n5 Problema 5 (bonus):"
+  },
+  {
+    "problem_id": "2023_tema1_sushi",
+    "year": "2023",
+    "tema": "tema1",
+    "pid": "sushi",
+    "n_solutions": 342,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 855,
+    "statement_chunk_excerpt": "sushi (Prietenul num˘ aruli a dat platoului num˘ arulj nota Gij).\nDe asemenea avet,i s, i un buget destul de ﬁx, as , a c˘ a at,i hot˘ arât ca ﬁecare din voi s˘ a\ncontribuie maxim X lei pentru mas˘ a (deci în total N ∗ X lei pentru toat˘ a nota de\nplat˘ a).\nTu es, ti responsabil s˘ a faci comanda s, i ai vrea s˘ a alegi meniurile astfel încât s˘ a\nmaximizezi suma notelor date de tine s , i prietenii t˘ ai platourilor comandate. Dac˘ a un\nplatou este comandat de exemplu de 2 ori, bineint,eles, notele pentru acel platou vor\nﬁ adunate de 2 ori.\nVrei s˘ a încerci mai multe restrict,ii s, i s˘ a ve"
+  },
+  {
+    "problem_id": "2023_tema2_ferate",
+    "year": "2023",
+    "tema": "tema2",
+    "pid": "ferate",
+    "n_solutions": 311,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 567,
+    "statement_chunk_excerpt": "ferate 5\n2.1 Enunt, . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n2.2 Date de intrare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n2.3 Date de ies, ire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n2.4 Restrict,ii s, i preciz˘ ari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n2.5 Testare s, i punctare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5\n2.6 Exemple . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6\n3 Problema 3:"
+  },
+  {
+    "problem_id": "2023_tema2_magazin",
+    "year": "2023",
+    "tema": "tema2",
+    "pid": "magazin",
+    "n_solutions": 344,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 2480,
+    "statement_chunk_excerpt": "magazin>\n./check.sh cs\n\nfolosire chatgpt 12\n• Punctajul pe teste este cel de pe vmchecker s , i se acord˘ a rulând tema doar cu\ntestele private.\n• Checkerul veriﬁc˘ a doar existent ,a unui README cu denumire corect˘ a s , i\ncont,inut nenul. Punctajul ﬁnal pe README s , i comentarii se acord˘ a la corectarea\nmanual˘ a a temei.\n• La corectarea manual˘ a se poate depuncta pentru erori de coding style care nu\nsunt semnalate de checker.\n• Corectorii îs, i rezerv˘ a dreptul de a sc˘ adea puncte pentru orice problem˘ a g˘ asit˘ a\nîn implementare, dac˘ a vor considera acest lucru necesar.\n• Pentru cit"
+  },
+  {
+    "problem_id": "2023_tema2_supercomputer",
+    "year": "2023",
+    "tema": "tema2",
+    "pid": "supercomputer",
+    "n_solutions": 332,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 832,
+    "statement_chunk_excerpt": "supercomputer, între task-uri\nexistând dependent,e de tipul: task-ul i trebuie terminat înainte de a începe task-ul j.\nDe asemenea, task-urile au nevoie ca unul din dou˘ a seturi de dates˘ a ﬁe înc˘ arcate în\nmemorie pentru a rula. Dac˘ a dou˘ a task-uri ce ruleaz˘ a consecutiv au nevoie de acelas, i\nset de date, setul poate r˘ amâne în memorie între execut,ii, iar al doilea task îl va folosi\ndirect, rapid. În schimb, dac˘ a cele dou˘ a task-uri au nevoie deseturi diferite , trebuie\ns˘ a realiz˘ am uncontext switch costisitor , pe care ne dorim s˘ a îl evit˘ am.\nPe Gigel s , i profesorul lui î"
+  },
+  {
+    "problem_id": "2023_tema2_teleportare",
+    "year": "2023",
+    "tema": "tema2",
+    "pid": "teleportare",
+    "n_solutions": 117,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 650,
+    "statement_chunk_excerpt": "teleportare , pe care le poate parcurge într-o singur˘ a secund˘ a. Din\nnefericire, ﬁecare astfel de tunel funct ,ioneaz˘ a doar odat˘ a la ﬁecarePi secunde, iar\nacest num˘ ar se numes, te perioada tunelului . De exemplu, Dorel poate intra într-un\ntunel de perioad˘ a3 doar la momentele 0, 3, 6, 9 etc.\nÎn plus, pentru c˘ a devine agitat atunci când e în întârziere, Dorel nu poate sta\npe loc, ci trebuie s˘ a se mis, te continuu (ceea ce înseamn˘ a c˘ a nu poate alege s˘ a as, tepte\nîntr-un nod).\nAjutat,i-l pe Dorel s˘ a ajung˘ a cât mai repede din camera lui (nodul 1), în sala de\ncurs (nodul N)."
+  },
+  {
+    "problem_id": "2024_tema1_colorare",
+    "year": "2024",
+    "tema": "tema1",
+    "pid": "colorare",
+    "n_solutions": 491,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 607,
+    "statement_chunk_excerpt": "colorare sunt urm˘ atoarele:\n• nu pot,i folosi decât 3 culori (galben, roz s, i mov)\n• nu pot,i colora p˘ atr˘ at,ele individuale, ci doar dreptunghiuri de dimensiune 1 × 2,\nas, ezate ﬁe pe orizontal˘ a, ﬁe pe vertical˘ a (întreg dreptunghiul trebuie colorat cu\naceeas, i culoare)\n• dou˘ a dreptunghiuri care au olatur˘ a comun˘ atrebuie s˘ a ﬁecolorate diferit .\nFascinat de acest tablou, Gigel a început s˘ a se gândeasc˘ a în câte moduri diferite\nar putea ar˘ ata la ﬁnal tabloul. Ajutat,i-l pe Gigel sa aﬂe num˘ arul de modele distincte,\nmodulo 109 + 7.\n2.2 Date de intrare\nPe prima linie din ﬁs "
+  },
+  {
+    "problem_id": "2024_tema1_compresie",
+    "year": "2024",
+    "tema": "tema1",
+    "pid": "compresie",
+    "n_solutions": 505,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 611,
+    "statement_chunk_excerpt": "compresie\n3.1 Enunt,\nFie urm˘ atoarea operat,ie asupra unui s , ir de numere: se alege o subsecvent , ˘ a din\ns, ir s, i se înlocuies , te cu suma elementelor din subsecvent , ˘ a. De exemplu dac˘ a avem\ns, irul [1, 6, 2, 4, 5] s, i alegem subsecvent,a [6, 2, 4] , obt,inem [1, 12, 5] .\nPentru un s, ir A de lungime n s, i un s, ir B de lungime m, determinat,i dac˘ a putem\nobt,ine dou˘ as, iruri egale prin 0 sau mai multe aplic˘ ari ale operat,iei deﬁnite mai sus,\nasupra lui A sau B, s, i aﬂat,i care e lungimea maxim˘ ape care o poate avea s, irul obt,inut.\n3.2 Date de intrare\nPe prima linie din"
+  },
+  {
+    "problem_id": "2024_tema1_criptat",
+    "year": "2024",
+    "tema": "tema1",
+    "pid": "criptat",
+    "n_solutions": 419,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 795,
+    "statement_chunk_excerpt": "criptat\n4.1 Enunt,\nNe dorim s˘ a construim un generator de parole puternice. Din acest motiv , vom\nîncerca s˘ a construim parole cât mai lungi, pentru a ﬁ mai greu de spart. Dar, pentru a\nne diferent,ia generatorul de celelalte din piat , ˘ a, mai avem câteva criterii pe care vrem\ns˘ a le îndeplinim.\nAvem la dispozit,ie o list˘ a deN cuvinte care ne plac, s , i vrem s˘ a form˘ am parola\ndoar concatenând unele dintre aceste cuvinte (ﬁecare cuvânt poate ﬁ folosit cel mult o\ndat˘ a). În plus, vrem ca toate parolele pe care le producem s˘ a aib˘ a o liter˘ a dominant˘ a\n(o liter˘ a care are strict"
+  },
+  {
+    "problem_id": "2024_tema1_oferta",
+    "year": "2024",
+    "tema": "tema1",
+    "pid": "oferta",
+    "n_solutions": 455,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 3881,
+    "statement_chunk_excerpt": "Oferta, care reprezint˘ a variante mai diﬁcile ale problemelor init ,iale.\nAcordarea bonusului NU este condit,ionat˘ a de rezolvarea celorlalte teste/probleme.\nÎn total se pot obt ,ine 150 de puncte ( NU se trunchiaz˘ a).\nPentru detalii putet,i s˘ a v˘ a uitat,i s, i peste regulile generale de trimitere a temelor.\n• O tem˘ a careNU compileaz˘ a va ﬁ punctat˘ a cu0.\n• O tem˘ a careNU trece niciun test pe vmchecker va ﬁ punctat˘ a cu 0.\n• V or exista mai multe teste pentru ﬁecare problem˘ a în parte. Punctele pe teste\nsunt independente, punctajul pe un anumit test neﬁind condit ,ionat de alte te"
+  },
+  {
+    "problem_id": "2024_tema1_servere",
+    "year": "2024",
+    "tema": "tema1",
+    "pid": "servere",
+    "n_solutions": 501,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 653,
+    "statement_chunk_excerpt": "Servere 3\n1.1 Enunt, . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n1.2 Date de intrare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n1.3 Date de ies, ire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n1.3.1 Aﬁs, are . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3\n1.4 Restrict,ii s, i preciz˘ ari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4\n1.5 Testare s, i punctare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4\n1.6 Exemple . . . . . . . . . . . . . . . . . . "
+  },
+  {
+    "problem_id": "2024_tema2_drumuri",
+    "year": "2024",
+    "tema": "tema2",
+    "pid": "drumuri",
+    "n_solutions": 484,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 580,
+    "statement_chunk_excerpt": "Drumuri Obligatorii 7\n3.1 Enunt, . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7\n3.2 Date de intrare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7\n3.3 Date de ies, ire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7\n3.4 Restrict,ii s, i preciz˘ ari . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7\n3.5 Testare s, i punctare . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7\n3.6 Exemple . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8\n4 Problema 4:"
+  },
+  {
+    "problem_id": "2024_tema2_numarare",
+    "year": "2024",
+    "tema": "tema2",
+    "pid": "numarare",
+    "n_solutions": 486,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 479,
+    "statement_chunk_excerpt": "numarare.in se vor aﬂa dou˘ a numere naturaleN s, i M\nseparate prin câte un spat ,iu, reprezentând num˘ arul de noduri, s, i num˘ arul de muchii.\nPe urm˘ atoareleM linii vor ﬁ câte dou˘ a numere naturale x s, i y, reprezentând\nfaptul c˘ a exist˘ a o muchie orientat˘ a de lax la y în primul graf.\nPe urm˘ atoareleM linii vor ﬁ câte dou˘ a numere naturalex, y, reprezentând faptul\nc˘ a exist˘ a o muchie orientat˘ a de lax la y în al doilea graf.\n1.3 Date de ies, ire\nÎn ﬁs, ierul"
+  },
+  {
+    "problem_id": "2024_tema2_scandal",
+    "year": "2024",
+    "tema": "tema2",
+    "pid": "scandal",
+    "n_solutions": 147,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 3809,
+    "statement_chunk_excerpt": "Scandal. Acordarea\nbonusului NU este condit,ionat˘ a de rezolvarea celorlalte teste/probleme. În total se\npot obt,ine 150 de puncte ( NU se trunchiaz˘ a).\nPentru detalii putet,i s˘ a v˘ a uitat,i s, i peste regulile generale de trimitere a temelor.\n• O tem˘ a careNU compileaz˘ a va ﬁ punctat˘ a cu0.\n• O tem˘ a careNU trece niciun test pe vmchecker va ﬁ punctat˘ a cu 0.\n• V or exista mai multe teste pentru ﬁecare problem˘ a în parte. Punctele pe teste\nsunt independente, punctajul pe un anumit test neﬁind condit ,ionat de alte teste.\n• Fiecare problem˘ a va avea o limit˘ a de timp pe test (preci"
+  },
+  {
+    "problem_id": "2024_tema2_trenuri",
+    "year": "2024",
+    "tema": "tema2",
+    "pid": "trenuri",
+    "n_solutions": 503,
+    "languages": [
+      "cpp",
+      "java"
+    ],
+    "statement_chunk_chars": 723,
+    "statement_chunk_excerpt": "trenuri\n2.1 Enunt,\nProfund impresionat de trenurile din Elvet ,ia (s, i pentru c˘ a s, i-a plictisit tot ,i\nprietenii vorbind despre ele), Bogdan Urzescu a decis s˘ a mearg˘ a într-o c˘ al˘ atorie\nlung˘ a.\nCa orice programator care se respect˘ a, Bogdan a desc˘ arcat o list˘ a de M curse\ndirecte cu trenul între diverse oras , e. Pentru c˘ a el este preocupat de criptomonede, v˘ a\ncere ajutorul cu urm˘ atoarea problem˘ a: s, tiind oras, ul din care pleac˘ a s, i oras, ul în care\nacesta îs, i dores, te s˘ a ajung˘ a, spunet,i-i num˘ arul maxim de oras, e distincte pe care le\npoate vizita. Se gar"
+  }
+]

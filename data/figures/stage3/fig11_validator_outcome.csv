@@ -1,0 +1,12 @@
+reason,count
+rubric:code_token_match,26
+rubric:too_short_words,25
+schema,17
+rubric:too_long_words,11
+rubric:order_inversion_at_2,7
+rubric:order_inversion_at_1,6
+rubric:too_long_sentences,5
+rubric:order_inversion_at_3,4
+err:validator crashed,4
+err:llm returned no hints,3
+rubric:too_many_hints,2

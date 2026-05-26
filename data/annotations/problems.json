@@ -1,0 +1,828 @@
+{
+  "version": "0.1",
+  "problems": [
+    {
+      "problem_id": "2021_tema1_crypto",
+      "year": "2021",
+      "tema": "tema1",
+      "pid": "crypto",
+      "annotation_source": "llm",
+      "primary_concept": "greedy",
+      "concepts": [
+        "greedy",
+        "sorting",
+        "prefix_sums",
+        "array_basic"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N log N)",
+      "common_pitfalls": [
+        "Nu sorta pe numărul de monede inițiale",
+        "Încărcarea greșită a costurilor cumulative",
+        "Încălcare a limitelor de tip long"
+      ],
+      "title": "Maximizarea criptomonedelor",
+      "summary": "Se caută numărul maxim de monede pe oră obținut prin upgrade-uri de calculatoare, având un buget limitat, folosind o strategie greedy bazată pe sortare și costuri cumulative.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2021_tema1_ridge",
+      "year": "2021",
+      "tema": "tema1",
+      "pid": "ridge",
+      "annotation_source": "llm",
+      "primary_concept": "dp_basic",
+      "concepts": [
+        "dp_basic"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N)",
+      "common_pitfalls": [
+        "Nu verifica că înălțimea nu devine negativă",
+        "Nu lua minimul peste toate stările posibile",
+        "Greșeală de indexare în DP",
+        "Nu inițializa corect stările de bază"
+      ],
+      "title": "Ridgedă cu cost minim",
+      "summary": "Se caută costul minim pentru a transforma înălțimile unor munți, prin săpare de cel mult 2 unități fiecare, astfel încât secvența obținută să fie o creastă (strict crescătoare apoi descrescătoare).",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2021_tema1_stocks",
+      "year": "2021",
+      "tema": "tema1",
+      "pid": "stocks",
+      "annotation_source": "llm",
+      "primary_concept": "dp_knapsack",
+      "concepts": [
+        "dp_knapsack",
+        "dp_basic",
+        "array_basic"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N · B · L)",
+      "common_pitfalls": [
+        "Indexare greșită a array-ului DP",
+        "Neinitializarea stărilor DP",
+        "Confuzie între pierdere și profit"
+      ],
+      "title": "Profit maxim pe bursă",
+      "summary": "Gigel trebuie să aleagă acțiuni pentru a maximiza profitul, având un buget și o pierdere maximă permisă. Problema se rezolvă cu DP 3D similar knapsack-ului cu două constrângeri.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2021_tema1_valley",
+      "year": "2021",
+      "tema": "tema1",
+      "pid": "valley",
+      "annotation_source": "llm",
+      "primary_concept": "greedy",
+      "concepts": [
+        "array_basic",
+        "greedy"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N)",
+      "common_pitfalls": [
+        "Nu se tratează corect mai multe valori minime",
+        "Erori de indexare la marginile șirului",
+        "Încărcarea înălțimilor poate depăși int",
+        ""
+      ],
+      "title": "Formarea unei vale",
+      "summary": "Se calculează numărul minim de ore necesare pentru a transforma un șir de înălțimi într-o vale, reducând doar înălțimile.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2021_tema2_adrese",
+      "year": "2021",
+      "tema": "tema2",
+      "pid": "adrese",
+      "annotation_source": "llm",
+      "primary_concept": "dsu",
+      "concepts": [
+        "dsu",
+        "hashmap",
+        "sorting"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(M log M)",
+      "common_pitfalls": [
+        "Nu uni toate adresele când se combină două seturi.",
+        "Ignorarea sortării lexicografice a numelor la sortare.",
+        "Neaplicarea compresiei de cale în DSU.",
+        "Contabilizarea greșită a persoanelor distincte.",
+        "Lipsa sortării adreselor înainte de afișare."
+      ],
+      "title": "Unirea persoanelor după email",
+      "summary": "Se combină persoane care au adrese de e-mail comune folosind DSU, apoi se afișează persoanele distincte sortate după număr de adrese și nume.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2021_tema2_lego",
+      "year": "2021",
+      "tema": "tema2",
+      "pid": "lego",
+      "annotation_source": "llm",
+      "primary_concept": "dp_basic",
+      "concepts": [
+        "dp_basic",
+        "combinatorics",
+        "backtracking",
+        "recursion"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(C(K,N) · N · T · K)",
+      "common_pitfalls": [
+        "Nu inițializați corect DP cu 0 ca sumă obținută",
+        "Nu verificați limita de T piese pentru fiecare sumă",
+        "Greșeala de a nu păstra combinația lexicografic minimă",
+        "Indexare incorectă a vectorului DP (off‑by‑one)"
+      ],
+      "title": "Dimensiuni consecutive LEGO",
+      "summary": "Se caută, pentru N dimensiuni de bază dintr-un interval de 1..K, cea care permite obținerea celui mai mare număr de dimensiuni consecutive folosind cel mult T piese. Se generează combinațiile posibile prin backtracking și, pentru fiecare, se calculează cu DP minimalul de piese necesare pentru fiecare dimensiune, apoi se determină lungimea maximă a secvenței consecutive.",
+      "llm_confidence": 0.9
+    },
+    {
+      "problem_id": "2021_tema2_poduri",
+      "year": "2021",
+      "tema": "tema2",
+      "pid": "poduri",
+      "annotation_source": "llm",
+      "primary_concept": "bfs",
+      "concepts": [
+        "bfs",
+        "graph_repr",
+        "queue"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N*M)",
+      "common_pitfalls": [
+        "Nu se verifică corect ieșirea din grilă",
+        "Se ignoră celulele '.' ca obstacole",
+        "Confuzie între indexare 1‑based și 0‑based",
+        "Nu se marchează celulele vizitate"
+      ],
+      "title": "Poduri – traversare minimă",
+      "summary": "Se caută cel mai scurt drum de la podul inițial la marginea grilei, traversând cel mai puțin poduri, folosind BFS pe un graf implicit reprezentat de grilă.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2021_tema2_retea",
+      "year": "2021",
+      "tema": "tema2",
+      "pid": "retea",
+      "annotation_source": "llm",
+      "primary_concept": "biconnected",
+      "concepts": [
+        "biconnected",
+        "dfs",
+        "graph_repr",
+        "io_fast"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N + M)",
+      "common_pitfalls": [
+        "Nu trata corect nodul rădăcină ca punct de articulație",
+        "Confuzie între numărul de noduri și numărul de legături",
+        "Încărcarea greșită a vectorilor 1-index vs 0-index"
+      ],
+      "title": "Pierderea apelurilor la eliminare nod",
+      "summary": "Se calculează, pentru fiecare nod, numărul de apeluri care nu pot fi inițiate dacă acel nod este eliminat din rețea, folosind algoritmul Tarjan pentru puncte de articulație și combinatorica subgrafurilor.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2022_tema1_crypto",
+      "year": "2022",
+      "tema": "tema1",
+      "pid": "crypto",
+      "annotation_source": "llm",
+      "primary_concept": "dp_basic",
+      "concepts": [
+        "dp_basic",
+        "string_basic",
+        "combinatorics"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N * L)",
+      "common_pitfalls": [
+        "Neglijarea modului în calcule de multiplicare",
+        "Confuzie între caracterele '?' și altele",
+        "Indexare greșită în matricea DP"
+      ],
+      "title": "Număr apariții cu cheie wildcard",
+      "summary": "Se calculează suma aparițiilor subșirului S în toate completările cheii K, unde '?' poate fi înlocuit cu literele din S. Se folosește DP pe lungimea cheii și a subșirului, aplicând modulo.",
+      "llm_confidence": 0.92
+    },
+    {
+      "problem_id": "2022_tema1_prinel",
+      "year": "2022",
+      "tema": "tema1",
+      "pid": "prinel",
+      "annotation_source": "llm",
+      "primary_concept": "dp_knapsack",
+      "concepts": [
+        "dp_knapsack",
+        "dp_basic"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N·K)",
+      "common_pitfalls": [
+        "Calcularea greșită a numărului minim de operații",
+        "Ignorarea limitărilor de timp și memorie",
+        "Aplicarea greșită a algoritmului 0/1 knapsack",
+        "Utilizarea unei soluții greedy în loc de DP",
+        "Accesarea dincolo de dimensiunea vectorului de DP"
+      ],
+      "title": "Maxim Puncte cu Operatii Limitate",
+      "summary": "Se calculează pentru fiecare element minimalul de operații necesare pentru a transforma 1 în target[i] și se rezolvă un problemă 0/1 knapsack cu greutăți egale cu acele operații și valori p[i], pentru a maximiza punctele obținute în K operații.",
+      "llm_confidence": 0.9
+    },
+    {
+      "problem_id": "2022_tema1_regele",
+      "year": "2022",
+      "tema": "tema1",
+      "pid": "regele",
+      "annotation_source": "llm",
+      "primary_concept": "dp_basic",
+      "concepts": [
+        "dp_basic",
+        "binary_search"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N^2 + Q log N)",
+      "common_pitfalls": [
+        "Ignorarea faptului că orașele de la margine au nevoie de o singură rută",
+        "Contabilizarea greșită a costului rutei când sunt activate ambele orașe",
+        "Aplicarea unei strategii greedy care nu respectă dependența între rute",
+        "Urmărirea greșită a costului minim pentru fiecare număr de orașe",
+        "Căutarea binară pe un vector incorect sortat"
+      ],
+      "title": "Activarea orașelor cu comercianți",
+      "summary": "Se calculează, pentru fiecare număr de orașe activabile, costul minim de comercianți necesar, apoi se răspunde la întrebări prin căutare binară pentru a găsi cea mai mare cantitate de orașe activabile cu M comercianți disponibili.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2022_tema1_statistics",
+      "year": "2022",
+      "tema": "tema1",
+      "pid": "statistics",
+      "annotation_source": "llm",
+      "primary_concept": "greedy",
+      "concepts": [
+        "greedy",
+        "sorting"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N log N)",
+      "common_pitfalls": [
+        "Nu sorta diffețele descrescător",
+        "Nu verifica cumulativ dacă suma > 0",
+        "Confuzie între > și ≥ la dominanță",
+        "Ignorarea cazului în care nu există cuvinte dominante",
+        "Overflow în calculul 2*count - len"
+      ],
+      "title": "Cuvinte dominante",
+      "summary": "Se caută numărul maxim de cuvinte dintr‑o listă astfel încât, concatenându‑le, există o literă care apare în peste jumătate din caractere.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2022_tema1_walsh",
+      "year": "2022",
+      "tema": "tema1",
+      "pid": "walsh",
+      "annotation_source": "llm",
+      "primary_concept": "divide_conquer",
+      "concepts": [
+        "divide_conquer"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(K log N)",
+      "common_pitfalls": [
+        "Recursivitate cu adâncime mare",
+        "Indexare 1‑based vs 0‑based",
+        "Negarea elementului în cadranul 4",
+        "Încărcarea greșită a datelor din fișier"
+      ],
+      "title": "Tabel Walsh – element la poziție",
+      "summary": "Se cere să se determine valoarea din matrice Walsh pentru K perechi de poziții, folosind recursivitatea pe quadrante pentru a evita construirea întregii matrice.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2022_tema2_beamdrone",
+      "year": "2022",
+      "tema": "tema2",
+      "pid": "beamdrone",
+      "annotation_source": "llm",
+      "primary_concept": "deque",
+      "concepts": [
+        "deque",
+        "bfs",
+        "graph_repr"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N*M)",
+      "common_pitfalls": [
+        "Nu se ține cont de orientarea inițială",
+        "Se folosește BFS fără stare de direcție",
+        "Se consideră cost egal pentru toate mișcările",
+        "Se uită să permită mișcarea în direcția opusă fără penalizare"
+      ],
+      "title": "Minimizarea rotațiilor dronei",
+      "summary": "Se caută cel mai scurt timp de rotație pentru a ajunge la destinație pe un grid, având cost 1 pentru fiecare viraj de 90°. Se consideră că mișcarea este instantanee și drona poate începe în orice direcție.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2022_tema2_curatare",
+      "year": "2022",
+      "tema": "tema2",
+      "pid": "curatare",
+      "annotation_source": "llm",
+      "primary_concept": "dp_bitmask",
+      "concepts": [
+        "dp_bitmask",
+        "bfs"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N·M)",
+      "common_pitfalls": [
+        "Nu considera că roboții pot curăța simultan",
+        "Greșeală la calcularea distanțelor BFS",
+        "Ignorarea că fiecare robot poate termina oriunde",
+        "Nu folosi DP pentru TSP pe setul de spatii murdare",
+        "Nu verifica accesibilitatea tuturor celulelor"
+      ],
+      "title": "Timp minim curățare",
+      "summary": "Se atribuie celule murdare roboților astfel încât timpul maxim necesar pentru ca toți roboții să le curețe să fie minimizat; se calculează distanțele cu BFS și se rezolvă TSP pe submulțimi cu DP bitmask.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2022_tema2_curse",
+      "year": "2022",
+      "tema": "tema2",
+      "pid": "curse",
+      "annotation_source": "llm",
+      "primary_concept": "topo_sort",
+      "concepts": [
+        "graph_repr",
+        "topo_sort",
+        "dfs"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(A·N + M)",
+      "common_pitfalls": [
+        "Ignorarea primei diferențe pe o pistă",
+        "Confuzie între indexare 1‑based și 0‑based",
+        "Crearea de muchii duplicate fără a verifica existența",
+        "Neutilizarea unui algoritm de topological sort pentru a evita cicluri",
+        "Neglijarea cazului în care două mașini sunt egale pe toate pistele"
+      ],
+      "title": "Ordine mașini pe baza antrenamentelor",
+      "summary": "Din fiecare antrenament se extrag relații de superioritate între mașini comparând primele piste diferite; aceste relații formează un graf aciclic, iar ordinea performanțelor se obține prin sortare topologică.",
+      "llm_confidence": 0.92
+    },
+    {
+      "problem_id": "2022_tema2_fortificatii",
+      "year": "2022",
+      "tema": "tema2",
+      "pid": "fortificatii",
+      "annotation_source": "llm",
+      "primary_concept": "dijkstra",
+      "concepts": [
+        "dijkstra",
+        "binary_search_answer",
+        "greedy",
+        "priority_queue"
+      ],
+      "difficulty": "hard",
+      "expected_complexity": "O((N+M) log N)",
+      "common_pitfalls": [
+        "Nu ignorați orașele barbarilor în Dijkstra",
+        "Folosiți tipuri de date incorecte pentru distanțe",
+        "Greșeli de off‑by‑one în căutarea binară",
+        "Nu sortați corect muchiile",
+        "Nu gestionați cazul în care niciun oraș barbar nu este accesibil"
+      ],
+      "title": "Fortificarea drumurilor",
+      "summary": "Se calculează distanțele de la capitală la orașele barbarilor și se alocă un număr limitat de unități de fortificare pentru a maximiza distanța minimă la acestea.",
+      "llm_confidence": 0.9
+    },
+    {
+      "problem_id": "2023_tema1_badgpt",
+      "year": "2023",
+      "tema": "tema1",
+      "pid": "badgpt",
+      "annotation_source": "llm",
+      "primary_concept": "combinatorics",
+      "concepts": [
+        "combinatorics",
+        "modular_arith",
+        "string_basic"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(G)",
+      "common_pitfalls": [
+        "Ignorarea grupurilor 'm'/'w' → răspuns 0",
+        "Folosește 64-bit pentru numerele de grup",
+        "Nu aplica modulo la fiecare multiplicare",
+        "Confuzia între 'nn' ca 'm' și 'nn' ca 'nn','Încercarea de a folosi DP în loc de formulă simplă"
+      ],
+      "title": "Număr de șiruri posibile",
+      "summary": "Se calculează numărul de interpretări posibile ale secvenței de 'n' și 'u', multiplicând pentru fiecare grupul de 'n'/'u' numărul de împărțiri în blocuri de 1 și 2, modulo 1e9+7.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2023_tema1_feribot",
+      "year": "2023",
+      "tema": "tema1",
+      "pid": "feribot",
+      "annotation_source": "llm",
+      "primary_concept": "binary_search",
+      "concepts": [
+        "binary_search",
+        "greedy",
+        "array_basic"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N log W)",
+      "common_pitfalls": [
+        "Nu verifici dacă o mașină depășește limita",
+        "Greșești intervalul inițial de căutare",
+        "Folosești tip de date insuficient (int în loc de long long)",
+        "Nu resetezi suma când depășești limita"
+      ],
+      "title": "Feribot: minimizarea costului maxim",
+      "summary": "Se dorește împărțirea unui convoi de mașini în K feriboturi, păstrând ordinea, astfel încât suma greutăților pe fiecare feribot să fie cât mai mică posibil. Se găsește cea mai mică valoare a costului maxim prin căutare binară și verificare greedy.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2023_tema1_nostory",
+      "year": "2023",
+      "tema": "tema1",
+      "pid": "nostory",
+      "annotation_source": "llm",
+      "primary_concept": "greedy",
+      "concepts": [
+        "greedy",
+        "sorting"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N log N)",
+      "common_pitfalls": [
+        "Confuzie între mutări între liste și în interiorul aceleiași liste",
+        "Ignorarea limitărilor K la interschimbări",
+        "Sortare inversă greșită a listei B"
+      ],
+      "title": "Scor maxim prin interschimbări între două liste",
+      "summary": "Se pot interschimba elemente între două liste pentru a maximiza suma maximelor pe poziții egale. Pentru nicio limită de mutări, se aleg cele N cele mai mari numere; cu K mutări, se aduc cele mai mari în lista B, limitat de K.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2023_tema1_semnale",
+      "year": "2023",
+      "tema": "tema1",
+      "pid": "semnale",
+      "annotation_source": "llm",
+      "primary_concept": "dp_basic",
+      "concepts": [
+        "dp_basic"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(x·y)",
+      "common_pitfalls": [
+        "Uitați modulo 1e9+7",
+        "Greșeală de indexare în DP",
+        "Nesemnarea corectă a cazurilor de bază"
+      ],
+      "title": "Numărare semnale fără consecutive",
+      "summary": "Se numără secvențele de 0 și 1 cu x zerouri și y unuuri, fără două (tip 1) sau trei (tip 2) consecutive unuuri.",
+      "llm_confidence": 0.9
+    },
+    {
+      "problem_id": "2023_tema1_sushi",
+      "year": "2023",
+      "tema": "tema1",
+      "pid": "sushi",
+      "annotation_source": "llm",
+      "primary_concept": "dp_basic",
+      "concepts": [
+        "dp_basic"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(M · N · X)",
+      "common_pitfalls": [
+        "Uitați să multiplicați notele cu numărul de persoane",
+        "Ignorați limita de 2 copii pentru un tip de sushi",
+        "Greșeala de a nu verifica bugetul total",
+        "Indexare incorectă în DP (off‑by‑one)"
+      ],
+      "title": "Sushi – buget și restricții",
+      "summary": "Se maximizează suma notelor pentru platouri de sushi, sub constrângeri de buget și număr de platouri, folosind DP de tip knapsack. Platouri pot fi comandate de mai multe ori, în funcție de cerință.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2023_tema2_ferate",
+      "year": "2023",
+      "tema": "tema2",
+      "pid": "ferate",
+      "annotation_source": "llm",
+      "primary_concept": "scc_tarjan",
+      "concepts": [
+        "scc_tarjan",
+        "graph_repr",
+        "dfs",
+        "topo_sort"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N + M)",
+      "common_pitfalls": [
+        "Ignorarea SCC-urilor deja accesibile din depozit.",
+        "Numărarea greșită a indegree-ului pentru SCC-urile cu auto-muchii.",
+        "Excluderea incorectă a SCC-ului depozitului din calcul.",
+        "Recursivitate prea profundă în Tarjan fără optimizare stack."
+      ],
+      "title": "Căi ferate – adăugare minimală de linii",
+      "summary": "Se caută numărul minim de linii ferate de adăugat pentru a face toate stațiile accesibile din depozitul principal. Se utilizează SCC-uri și indegree în graful condensat.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2023_tema2_magazin",
+      "year": "2023",
+      "tema": "tema2",
+      "pid": "magazin",
+      "annotation_source": "llm",
+      "primary_concept": "tree_traversal",
+      "concepts": [
+        "tree_traversal",
+        "dfs",
+        "dp_basic",
+        "array_basic"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N + Q)",
+      "common_pitfalls": [
+        "Indexare 1-based incorectă",
+        "Accesare index peste limita DFS-ului",
+        "Recursivitate fără limită de stivă"
+      ],
+      "title": "Expediere în arbore",
+      "summary": "Se construiește ordinea DFS a arborelui și se calculează dimensiunile subarborelui pentru a răspunde rapid la întrebări despre E‑lea livrare.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2023_tema2_supercomputer",
+      "year": "2023",
+      "tema": "tema2",
+      "pid": "supercomputer",
+      "annotation_source": "llm",
+      "primary_concept": "dp_basic",
+      "concepts": [
+        "graph_repr",
+        "dp_basic",
+        "bfs"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N+M)",
+      "common_pitfalls": [
+        "Ignorarea componentelor izolate",
+        "Modificarea indegree-ului fără resetare",
+        "Recursivitate pe grafuri mari"
+      ],
+      "title": "Minimizare schimbări context",
+      "summary": "Se caută ordinea de execuție a sarcinilor într-un graf aciclic astfel încât numărul de treceri între două tipuri de seturi de date să fie minim.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2023_tema2_teleportare",
+      "year": "2023",
+      "tema": "tema2",
+      "pid": "teleportare",
+      "annotation_source": "llm",
+      "primary_concept": "dijkstra",
+      "concepts": [
+        "dijkstra",
+        "graph_repr",
+        "dp_basic"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O((N+M+K)·log(N·L))",
+      "common_pitfalls": [
+        "Ignorarea modulo lcm în distanță",
+        "Neapăratul verificării perioadei pentru teleport",
+        "Încărcarea greșită a timpului total în distanță",
+        "Neutilizarea 64-bit pentru timp",
+        "Neglijarea căutării în starea corectă"
+      ],
+      "title": "Căutare scurtă cu teleportare periodică",
+      "summary": "Se caută cel mai rapid drum într-un graf cu muchii normale și teleporturi care se deschid la momente multiple de perioadă, folosind Dijkstra pe starea (nod, timp mod lcm).",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2024_tema1_colorare",
+      "year": "2024",
+      "tema": "tema1",
+      "pid": "colorare",
+      "annotation_source": "llm",
+      "primary_concept": "dp_basic",
+      "concepts": [
+        "dp_basic",
+        "combinatorics"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(K log N)",
+      "common_pitfalls": [
+        "Confuzie orientare orizontală/verticală",
+        "Neînțelegerea condiției de culoare la margine",
+        "Încărcarea de tip int în loc de long long"
+      ],
+      "title": "Colorare 2xN cu 3 culori",
+      "summary": "Se calculează numărul de moduri de a acoperi un tablou 2×N cu domino-uri 1×2 colorate în 3 culori, respectând restricția că dreptunghiuri adiacente au culori diferite. Se utilizează DP pe segmente și exponențiere binară pentru eficiență.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2024_tema1_compresie",
+      "year": "2024",
+      "tema": "tema1",
+      "pid": "compresie",
+      "annotation_source": "llm",
+      "primary_concept": "two_pointers",
+      "concepts": [
+        "two_pointers",
+        "greedy",
+        "array_basic"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(n + m)",
+      "common_pitfalls": [
+        "Nu resetați sumele după potrivire",
+        "Ignorați elementele rămase la sfârșit",
+        "Indexare incorectă (0 vs 1)"
+      ],
+      "title": "Compressie secvențe în două liste",
+      "summary": "Se dau două secvențe de numere pozitive. Se pot combina elementele adiacente pentru a obține două secvențe egale; se caută lungimea maximă a secvenței obținută. Dacă nu este posibil, se returnează -1.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2024_tema1_criptat",
+      "year": "2024",
+      "tema": "tema1",
+      "pid": "criptat",
+      "annotation_source": "llm",
+      "primary_concept": "dp_basic",
+      "concepts": [
+        "dp_basic"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N * L)",
+      "common_pitfalls": [
+        "Urmărirea greșită a condiției dominantă (strict > jumătate)",
+        "Ignorarea faptului că fiecare cuvânt poate fi folosit o singură dată",
+        "Confuzia între lungimea totală și numărul de caractere nedominante în DP",
+        "Indexarea greșită a matricei DP (capacitate 0..total_filler)"
+      ],
+      "title": "Parola cu literă dominantă",
+      "summary": "Se caută cea mai lungă concatenare de cuvinte astfel încât o literă să apară în mai mult de jumătate din lungime. Se rezolvă prin DP de tip knapsack pentru fiecare literă posibilă.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2024_tema1_oferta",
+      "year": "2024",
+      "tema": "tema1",
+      "pid": "oferta",
+      "annotation_source": "llm",
+      "primary_concept": "dp_basic",
+      "concepts": [
+        "dp_basic"
+      ],
+      "difficulty": "hard",
+      "expected_complexity": "O(N*K)",
+      "common_pitfalls": [
+        "Ignorarea duplicatelor reduce numărul de soluții distincte",
+        "Utilizarea tipului float fără scalare poate genera erori de precizie",
+        "Amestecarea indexelor în DP poate duce la erori de acces",
+        "Nu se sortează și se combină corect listele de costuri",
+        "Neglijarea cazului în care K>număr_soluții_discrete",
+        "Omiterea verificării că toate produsele sunt achiziționate"
+      ],
+      "title": "Reduceri pe bandă de produse",
+      "summary": "Se calculează cel mai mic (sau K-lea) cost obținut prin gruparea produselor adiacente, folosind reduceri de 50% la perechi și 100% la triplete.",
+      "llm_confidence": 0.92
+    },
+    {
+      "problem_id": "2024_tema1_servere",
+      "year": "2024",
+      "tema": "tema1",
+      "pid": "servere",
+      "annotation_source": "llm",
+      "primary_concept": "divide_conquer",
+      "concepts": [
+        "divide_conquer",
+        "binary_search"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N log Cmax)",
+      "common_pitfalls": [
+        "Ignorarea faptului că puterea poate deveni negativă",
+        "Utilizarea diviziunii întregi în loc de float pentru x",
+        "Nesigurarea preciziei suficiente în căutarea ternară",
+        "Greșeala de a nu actualiza corect intervalul de căutare"
+      ],
+      "title": "Maximizare putere servere",
+      "summary": "Se caută nivelul de alimentare care maximizează puterea minimă a serverelor, calculând funcția Pi - |x - Ci| și aplicând căutare ternară pe intervalul [min Ci, max Ci].",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2024_tema2_drumuri",
+      "year": "2024",
+      "tema": "tema2",
+      "pid": "drumuri",
+      "annotation_source": "llm",
+      "primary_concept": "dijkstra",
+      "concepts": [
+        "dijkstra",
+        "graph_repr",
+        "priority_queue"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O((N+M) log N)",
+      "common_pitfalls": [
+        "Folosești int pentru distanțe, cauzează overflow",
+        "Nu inversezi graful pentru calculul de la z",
+        "Ignori nodurile inaccesibile"
+      ],
+      "title": "Drumuri cu cost minim",
+      "summary": "Se caută submulțimea de muchii cu cost minim care permite un drum de la x la z și unul de la y la z.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2024_tema2_numarare",
+      "year": "2024",
+      "tema": "tema2",
+      "pid": "numarare",
+      "annotation_source": "llm",
+      "primary_concept": "dp_basic",
+      "concepts": [
+        "dp_basic",
+        "graph_repr",
+        "topo_sort"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N + M)",
+      "common_pitfalls": [
+        "Uitați modulo 1e9+7",
+        "Construirea incorectă a intersecției de adiacență",
+        "Neglijați ordinea topologică"
+      ],
+      "title": "Numărări de drumuri comune",
+      "summary": "Se caută numărul de drumuri simple de la 1 la N care apar în ambele grafuri orientate, folosind programarea dinamică pe DAG și intersecția de adiacență.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2024_tema2_scandal",
+      "year": "2024",
+      "tema": "tema2",
+      "pid": "scandal",
+      "annotation_source": "llm",
+      "primary_concept": "scc_tarjan",
+      "concepts": [
+        "scc_tarjan",
+        "graph_repr",
+        "dfs"
+      ],
+      "difficulty": "hard",
+      "expected_complexity": "O(N + M)",
+      "common_pitfalls": [
+        "Confuzie între variabilele pozitive și negative",
+        "Neglijarea adăugării tuturor legăturilor de implicație",
+        "Accesarea greșită a vectorului de SCC"
+      ],
+      "title": "Scandal 2-SAT",
+      "summary": "Rezolvă problema de satisfacție 2‑SAT prin construirea grafului de implicații și identificarea componentelor puternic conexe cu algoritmul Tarjan/Kosaraju.",
+      "llm_confidence": 0.95
+    },
+    {
+      "problem_id": "2024_tema2_trenuri",
+      "year": "2024",
+      "tema": "tema2",
+      "pid": "trenuri",
+      "annotation_source": "llm",
+      "primary_concept": "dp_basic",
+      "concepts": [
+        "graph_repr",
+        "topo_sort",
+        "dp_basic"
+      ],
+      "difficulty": "medium",
+      "expected_complexity": "O(N + M)",
+      "common_pitfalls": [
+        "Recursivitate prea mare în DFS",
+        "Neinversarea ordinii topologice",
+        "Inițializarea greșită a DP-ului",
+        "Numărarea incorectă a orașelor (excluzând start)"
+      ],
+      "title": "Maxim număr de orașe într-un DAG",
+      "summary": "Se caută cea mai lungă cale într-un graf orientat aciclic, numărând orașele distincte de la start la destinație.",
+      "llm_confidence": 0.95
+    }
+  ]
+}

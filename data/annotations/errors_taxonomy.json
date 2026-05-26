@@ -1,0 +1,36 @@
+{
+  "version": "0.1",
+  "L1": [
+    { "id": "OK",    "label": "Acceptat", "description": "Toate testele trec, scor 100." },
+    { "id": "WA",    "label": "Wrong Answer", "description": "Output diferit de cel așteptat pe cel puțin un test." },
+    { "id": "TLE",   "label": "Time Limit Exceeded", "description": "Soluția depășește limita de timp." },
+    { "id": "MLE",   "label": "Memory Limit Exceeded", "description": "Soluția depășește limita de memorie." },
+    { "id": "RE",    "label": "Runtime Error", "description": "Crash în execuție: SIGSEGV, divizare la 0, exception, etc." },
+    { "id": "CE",    "label": "Compile Error", "description": "Codul nu compilează." },
+    { "id": "OTHER", "label": "Altceva", "description": "Probleme la I/O, formatare output, lipsă răspuns parțial." }
+  ],
+  "L2": [
+    { "id": "L2_off_by_one",      "label": "Off-by-one",                  "description": "Index, lungime, sau condiție de oprire greșită cu 1.", "applies_to": ["WA", "RE"], "examples": ["i <= n în loc de i < n", "size-1 vs size"] },
+    { "id": "L2_missing_base",    "label": "Lipsă caz de bază",            "description": "Recursie / iterație fără caz de bază.",                "applies_to": ["RE", "WA"], "examples": ["recursie infinită", "nu tratează N=0 sau N=1"] },
+    { "id": "L2_wrong_complexity","label": "Complexitate greșită",         "description": "Algoritmul are complexitate prea mare; corect logic dar lent.", "applies_to": ["TLE"], "examples": ["O(N^2) când se cere O(N log N)"] },
+    { "id": "L2_wrong_dstruct",   "label": "Structură de date inadecvată", "description": "Folosește o structură nepotrivită (ex. listă în loc de set).", "applies_to": ["TLE", "WA"], "examples": ["search liniar în vector în loc de set"] },
+    { "id": "L2_overflow",        "label": "Overflow numeric",             "description": "Tip prea mic pentru valoarea calculată.",              "applies_to": ["WA"], "examples": ["int în loc de long long la sume mari"] },
+    { "id": "L2_io_format",       "label": "Format I/O incorect",          "description": "Output în format greșit (separator, newline, header).", "applies_to": ["WA", "OTHER"], "examples": ["spații în plus", "lipsă newline final"] },
+    { "id": "L2_uninit_state",    "label": "Stare neinițializată / nereresetată", "description": "Variabile/structuri rămân cu valori de la pasul anterior.", "applies_to": ["WA"], "examples": ["nu resetează visited[] între test cases"] },
+    { "id": "L2_wrong_algo",      "label": "Algoritm greșit",              "description": "Soluția implementată nu rezolvă problema (concept ratat).", "applies_to": ["WA"], "examples": ["aplică BFS unde trebuie Dijkstra"] },
+    { "id": "L2_pruning_missing", "label": "Lipsă tăiere de căutare",      "description": "Backtracking fără pruning suficient.",                 "applies_to": ["TLE"], "examples": ["brute force complet acolo unde se cere DP"] },
+    { "id": "L2_memory_layout",   "label": "Memorie alocată greșit",       "description": "Vector/array de dimensiune insuficientă sau prea mare.", "applies_to": ["RE", "MLE"], "examples": ["array static cu N+1 când max e 10^6"] }
+  ],
+  "L3": [
+    { "id": "L3_missing_visited",       "label": "Lipsă vector visited la BFS/DFS", "concept_id": "bfs",          "examples": ["fără visited[v]=true → ciclează"] },
+    { "id": "L3_dijkstra_neg_edges",    "label": "Dijkstra cu muchii negative",     "concept_id": "dijkstra",     "examples": ["cere Bellman-Ford pe muchii negative"] },
+    { "id": "L3_dp_state_incomplete",   "label": "Stare DP incompletă",             "concept_id": "dp_basic",     "examples": ["uită un parametru relevant în stare"] },
+    { "id": "L3_segtree_lazy_missing",  "label": "Segment tree fără lazy propagation","concept_id": "segment_tree","examples": ["update interval prin O(N) în loc de lazy"] },
+    { "id": "L3_dsu_no_path_compress",  "label": "DSU fără path compression",       "concept_id": "dsu",          "examples": ["find recursiv fără compresie → TLE"] },
+    { "id": "L3_modular_inv_missing",   "label": "Lipsă invers modular",            "concept_id": "modular_arith","examples": ["împarte cu mod direct fără invers"] },
+    { "id": "L3_topo_cycle",            "label": "Topo sort fără detecție ciclu",   "concept_id": "topo_sort",    "examples": ["nu detectează că graful are ciclu"] },
+    { "id": "L3_two_pointers_invariant","label": "Două indicatoare cu invariant rupt","concept_id": "two_pointers", "examples": ["nu menține condiția pe fereastra curentă"] },
+    { "id": "L3_binsearch_predicate",   "label": "Căutare binară pe răspuns - predicat greșit","concept_id": "binary_search_answer","examples": ["funcția check nu este monotonă"] },
+    { "id": "L3_greedy_no_proof",       "label": "Greedy fără justificare",         "concept_id": "exchange_argument","examples": ["alegere locală care strică optimul global"] }
+  ]
+}

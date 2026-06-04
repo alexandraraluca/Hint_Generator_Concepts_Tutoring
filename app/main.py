@@ -185,14 +185,20 @@ def main() -> None:
                 "**Fine-tuned** încarcă adapter-ul Stage 4. Necesită CUDA."
             ),
         )
-        adapter_dir_input = st.text_input(
-            "Adapter dir",
-            # value="app/mistral7b_instruct_pa_hints",
-            value="app/adapter_specific_hints/mistral7b_instruct_pa_hints",
+        _adapter_choices = {
+            "Specific hints (adapter_specific_hints)": (
+                "app/adapter_specific_hints/mistral7b_instruct_pa_hints"
+            ),
+            "General PA hints": "app/mistral7b_instruct_pa_hints",
+        }
+        adapter_label = st.selectbox(
+            "Adapter",
+            list(_adapter_choices.keys()),
+            index=0,
             disabled=backend_choice == "Ollama (base)",
-            help="Cale relativă la rădăcina repo-ului sau cale absolută către folderul cu "
-            "manifest.json și greutățile LoRA.",
+            help="Alege adapter-ul LoRA Stage 4. Ambele căi sunt relative la rădăcina repo-ului.",
         )
+        adapter_dir_input = _adapter_choices[adapter_label]
         temperature = st.slider("Temperature", 0.0, 1.0, 0.4, 0.05)
 
         st.markdown("---")

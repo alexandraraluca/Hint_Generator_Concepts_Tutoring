@@ -41,13 +41,19 @@ from src.common.paths import (
 )
 from src.stage3_hints.prompt_builder import build_system_prompt, build_user_prompt
 
-SILVER_IN = HINTS_DIR / "silver_diff.jsonl"
-# BOOT_IN = HINTS_DIR / "llm_bootstrap.jsonl"
+# SILVER_IN = HINTS_DIR / "silver_diff.jsonl"
+# # BOOT_IN = HINTS_DIR / "llm_bootstrap.jsonl"
 
-TRAIN_OUT = HINTS_DIR / "specific2_finetune_train.jsonl"
-VAL_OUT = HINTS_DIR / "specific2_finetune_val.jsonl"
-TEST_OUT = HINTS_DIR / "specific2_finetune_test.jsonl"
-STATS_OUT = HINTS_DIR / "specific2_finetune_stats.json"
+# TRAIN_OUT = HINTS_DIR / "specific2_finetune_train.jsonl"
+# VAL_OUT = HINTS_DIR / "specific2_finetune_val.jsonl"
+# TEST_OUT = HINTS_DIR / "specific2_finetune_test.jsonl"
+# STATS_OUT = HINTS_DIR / "specific2_finetune_stats.json"
+
+SILVER_IN = HINTS_DIR / "segments.jsonl"
+TRAIN_OUT = HINTS_DIR / "segments_finetune_train.jsonl"
+VAL_OUT = HINTS_DIR / "segments_finetune_val.jsonl"
+TEST_OUT = HINTS_DIR / "segments_finetune_test.jsonl"
+STATS_OUT = HINTS_DIR / "segments_finetune_stats.json"
 
 
 def _filter_valid(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:

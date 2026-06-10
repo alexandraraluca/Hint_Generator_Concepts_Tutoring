@@ -21,8 +21,10 @@ model:
 data:
   # train_path: data/hints/finetune_train.jsonl
   # val_path: data/hints/finetune_val.jsonl
-  train_path: data/hints/specific2_finetune_train.jsonl
-  val_path: data/hints/specific2_finetune_val.jsonl
+  # train_path: data/hints/specific2_finetune_train.jsonl
+  # val_path: data/hints/specific2_finetune_val.jsonl
+  train_path: data/hints/segments_finetune_train.jsonl
+  val_path: data/hints/segments_finetune_val.jsonl
   max_seq_length: 4096
   pack_sequences: false
 

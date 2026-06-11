@@ -189,14 +189,21 @@ def main() -> None:
             "Specific hints (adapter_specific_hints)": (
                 "app/adapter_specific_hints/mistral7b_instruct_pa_hints"
             ),
-            "General PA hints": "app/mistral7b_instruct_pa_hints",
+            "General PA Hints (adapter_bootstrap_hints)": (
+                "app/adapter_bootstrap_hints/mistral7b_instruct_pa_hints"
+            ),
+            "Concept hints (adapter_segments_hints)": (
+                "app/adapter_segments_hints/mistral7b_instruct_pa_hints"
+            ),
         }
         adapter_label = st.selectbox(
             "Adapter",
             list(_adapter_choices.keys()),
             index=0,
             disabled=backend_choice == "Ollama (base)",
-            help="Alege adapter-ul LoRA Stage 4. Ambele căi sunt relative la rădăcina repo-ului.",
+            help=(
+                "Alege adapter-ul LoRA Stage 4. Căile sunt relative la rădăcina repo-ului."
+            ),
         )
         adapter_dir_input = _adapter_choices[adapter_label]
         temperature = st.slider("Temperature", 0.0, 1.0, 0.4, 0.05)

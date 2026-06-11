@@ -12,6 +12,7 @@ env/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+venv-stable/
 
 # Jupyter
 .ipynb_checkpoints/
@@ -56,8 +57,9 @@ statements.zip
 solutions.zip
 tests.zip
 submission_feedback.jsonl
-app/mistral7b_instruct_pa_hints/
 app/adapter_specific_hints/mistral7b_instruct_pa_hints/
+app/adapter_bootstrap_hints/mistral7b_instruct_pa_hints/
+app/adapter_segments_hints/mistral7b_instruct_pa_hints/
 notebooks/
 README.md
 docs/

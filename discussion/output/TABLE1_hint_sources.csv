@@ -1,0 +1,3 @@
+source,n_attempts,n_valid,pass_rate_pct,n_problems,avg_hints,avg_words_per_hint,median_sim_statement,median_sim_solution,top_violations
+Bootstrap LLM,556,489,87.94964028776978,35,3.152727272727273,30.159151515151514,0.1419783514671693,0.008928701023269418,code_token_match (26), too_short_words (25), schema (17)
+Silver (perechi),293,143,48.80546075085324,33,3.5317460317460316,30.12466931216931,0.12220348534298174,0.0345588940841018,too_short_words (36), llm_error (31), order_inversion_at_3 (16)
